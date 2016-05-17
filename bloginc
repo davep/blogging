@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ "$1" ]
+then
+    
+    ROOT=~/blogging/davep.github.com/
+    DIR="$(cd "$(dirname "$1")" && pwd -P)"
+    FILE=$(basename "$1")
+    URL=/$(echo $DIR | sed 's~'$ROOT'~~')/"$FILE"
+    MARKUP="![]($URL)"
+
+    echo $MARKUP | pbcopy
+    echo $MARKUP
+    
+else
+    echo "Usage: $(basename $0) <file>"
+fi

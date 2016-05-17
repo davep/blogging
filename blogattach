@@ -1,0 +1,7 @@
+#!/bin/sh
+
+ROOT=~/blogging/davep.github.com/attachments/
+TODAY=$(date +"%Y/%m/%d")
+
+mkdir -p $ROOT$TODAY
+echo Made $ROOT$TODAY
