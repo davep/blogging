@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ROOT=~/write/davep.github.com/attachments/
+ROOT=~/write/davep.github.com/content/attachments/
 TODAY=$(date +"%Y/%m/%d")
 
 mkdir -p $ROOT$TODAY
