@@ -1,4 +1,4 @@
 #!/bin/sh
 
 cd ~/write/davep.github.com
-jekyll serve
+make serve
