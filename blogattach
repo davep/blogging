@@ -1,7 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 
 ROOT=~/write/davep.github.com/content/attachments/
 TODAY=$(date +"%Y/%m/%d")
 
 mkdir -p $ROOT$TODAY
 echo Made $ROOT$TODAY
+echo -n "$ROOT$TODAY" | pbcopy
+
+### blogattach ends here
